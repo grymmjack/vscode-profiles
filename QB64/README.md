@@ -4,7 +4,8 @@
 
 > For more information about profiles in VSCode: https://code.visualstudio.com/updates/v1_75#_profiles
 
-See YouTube video demonstrating this profile here:
+See YouTube video demonstrating this profile here:  
+
 [![It's More Fun to Compute #2 - QB64 Profile in VSCode](https://img.youtube.com/vi/TF-jJa3G8P4/0.jpg)](https://www.youtube.com/watch?v=TF-jJa3G8P4)
 
 ## This profile includes:
