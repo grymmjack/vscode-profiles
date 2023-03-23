@@ -1,4 +1,6 @@
-# QB64 Visual Studio Code profile
+# grymmjack's QB64 Visual Studio Code profile
+
+![qb64-profile](https://user-images.githubusercontent.com/412263/227123786-a59efb2c-ab11-47aa-82a3-144ac9bdbbd2.png)
 
 > For more information about profiles in VSCode: https://code.visualstudio.com/updates/v1_75#_profiles
 
