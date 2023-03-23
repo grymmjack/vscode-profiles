@@ -4,6 +4,9 @@
 
 > For more information about profiles in VSCode: https://code.visualstudio.com/updates/v1_75#_profiles
 
+See YouTube video demonstrating this profile here:
+https://youtu.be/TF-jJa3G8P4
+
 ## This profile includes:
 
 - Custom color theme based on MS-DOS Editor Theme (and highly tweaked)
