@@ -2,12 +2,12 @@
 
 ## Resources
 
-- [QBJS](https://qbjs.org) Web IDE
-- [QBJS GitHub](https://github.com/boxgaming/qbjs) Repo
-- [QBJS Docs](https://github.com/boxgaming/qbjs/wiki) Wiki
-- [NWJS Docs](https://nwjs.readthedocs.io/en/latest/)
-- [NWJS GitHub](https://github.com/nwjs/nw.js)
-- [QB64 GitHub](https://github.com/QB64-Phoenix-Edition/QB64pe)
+- [QBJS](https://qbjs.org) **Web IDE** - Everything QBJS in one location: web editor, file manager, and browser app.
+- [QBJS GitHub](https://github.com/boxgaming/qbjs) Repo - More information about QBJS and source here.
+- [QBJS Docs](https://github.com/boxgaming/qbjs/wiki) Wiki - Documentation for QBJS
+- [NWJS Docs](https://nwjs.readthedocs.io/en/latest/) - Documentation for NWJS on Read The Docs
+- [NWJS GitHub](https://github.com/nwjs/nw.js) - Repo for NWJS source here.
+- [QB64 GitHub](https://github.com/QB64-Phoenix-Edition/QB64pe) - QB64 Phoenix Edition repo and source here. (NEEDED TO BUILD qb2js Transpiler)
 
 # This profile uses the following extensions:
 - [Debugger for NWJS](https://marketplace.visualstudio.com/items?itemName=ruakr.vsc-nwjs)
