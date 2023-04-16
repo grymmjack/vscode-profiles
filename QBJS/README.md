@@ -23,6 +23,12 @@ This profile makes the QBJS development experience as friendly and native for VS
 - Using Live Preview server for local HTML/JS/CSS work
 - Export to NWJS for native application version for Windows, Mac, and Linux.
 
+> Example showing Live Preview working side by side with VScode (you can also do this without leaving vscode)
+![QBJS Live Preview - External Browser](qbjs-livepreview-external.png)
+
+> Example showing native Windows application running thanks to NWJS export
+![NWJS Application Running in Windows](qbjs-nwjs-apprun.png)
+
 ## About NWJS
 NWJS will create a binary package for Windows, Linux, and MacOS that will have a native application window and load your HTML and QBJS code into.
 
