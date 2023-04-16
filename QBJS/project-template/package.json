@@ -1,0 +1,8 @@
+{
+  "name": "Main",
+  "main": "index.html",
+  "icon": "qbjs-logo.png",
+  "window": {
+    "icon": "qbjs-logo.png"
+  }
+}

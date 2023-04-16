@@ -1,0 +1,10 @@
+{
+  "version": "any",
+  "package": {},
+  "html": [
+    "index.html"
+  ],
+  "files": [],
+  "exclude": [],
+  "publishDir": "publish"
+}

@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Node Debug",
+            "type": "nwjs",
+            "request": "launch",
+            "runtimeExecutable": "${workspaceRoot}/publish/nw",
+            "runtimeArgs": [
+                "${workspaceRoot}/build",
+                "--remote-debugging-port=9222"
+            ],
+            "webRoot": "${workspaceRoot}/build",
+            "sourceMaps": true,
+            "port": 9222
+        }
+    ]
+}
