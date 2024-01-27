@@ -75,5 +75,40 @@
 			"END SUB",
 		],
 		"description": "Create global QB64PE header"
+	},
+	"QB64PE Draw Screen and Input Loop": {
+		"scope": "QB64",
+		"prefix": "qbs",
+		"body": [
+			"'Setup screen and input loop",
+			"DIM SHARED AS STRING k"
+			"DIM SHARED AS LONG CANVAS",
+			"CANVAS = _NEWIMAGE(720, 480, 32)",
+			"SCREEN CANVAS",
+			"do_output",
+			"$1",
+			"DO",
+			"	_LIMIT 30",
+			"	k$ = INKEY\\$",
+			"	SELECT CASE k",
+			"		CASE CHR\\$(27)",
+			"			EXIT DO",
+			"		CASE CHR\\$(32)",
+			"			do_output"
+			"		CASE LCASE\\$(\"d\")",
+			"			PRINT \"hello, world\"",
+			"	END SELECT",
+			"LOOP",
+			"SCREEN 0",
+			"_FREEIMAGE CANVAS",
+			"SYSTEM",
+			"",
+			"",
+			"",
+			"SUB do_output",
+			"	' put output here, update as needed",
+			"END SUB"
+		],
+		"description": "Create a screen and input loop"
 	}
 }
