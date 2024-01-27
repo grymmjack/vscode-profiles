@@ -1,48 +1,79 @@
 {
-    "comment": {
-        "prefix": "''B",
-        "body": [
-            "''",
-            "' ${1:block}",
-            "' ${2:description}",
-            "' $0"
-        ],
-        "description": "Block comment"
-    },
-    "header": {
-        "prefix": "''H",
-        "body": [
-            "''",
-            "' ${1|DRAW, |} - ${TM_FILENAME}",
-            "' =============================================================================",
-            "' ${2:description}",
-            "'",
-            "' @author Rick Christy <grymmjack@gmail.com>",
-            "'",
-            "",
-            "\\$IF ${TM_FILENAME/[\\.-]/_/g} = UNDEFINED THEN",
-            "    \\$LET ${TM_FILENAME/[\\.-]/_/g} = 1",
-            "\\$END IF",
-            "",
-            "$0"
-        ],
-        "description": "Header comment"		
-    },
-    "VGA": {
-        "prefix": "''V",
-        "body": [
-            "OPTION _EXPLICIT",
-            "OPTION _EXPLICITARRAY",
-            "",
-            "DIM CANVAS AS LONG",
-            "CANVAS& = _NEWIMAGE(300,200,32)",
-            "SCREEN CANVAS&",
-            "",
-            "DO:",
-            "   _LIMIT 30",
-            "LOOP UNTIL _KEYHIT=27",
-            "",
-            "SYSTEM"
-        ]
-    }
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"QB64PE Global Header": {
+		"scope": "QB64",
+		"prefix": "qb",
+		"body": [
+			"\\$NOPREFIX",
+			"'\\$DYNAMIC",
+			"OPTION _EXPLICIT",
+			"OPTION _EXPLICITARRAY",
+			"\\$IF DEBUGGING = UNDEFINED THEN",
+			"	\\$LET DEBUGGING = TRUE",
+			"\\$END IF",
+			"\\$IF DEBUGGING = TRUE THEN",
+			"	\\$DEBUG",
+			"	\\$CONSOLE",
+			"	\\$ASSERTS:CONSOLE",
+			"	_CONSOLE ON",
+			"\\$END IF",
+			"\\$IF FALSE = UNDEFINED AND TRUE = UNDEFINED THEN",
+			"	\\$LET TRUE = TRUE",
+			"	CONST FALSE = 0 : CONST TRUE = NOT FALSE"
+			"\\$END IF",
+			"",
+			"",
+			"",
+			"$1",
+			"",
+			"",
+			"",
+			"SUB console.log(msg$)"
+			"	\\$IF DEBUGGING = TRUE THEN",
+			"		_ECHO msg$",
+			"	\\$END IF",
+			"	msg\\$ = \"\"",
+			"END SUB"
+			"SUB console.info(msg\\$)"
+			"	\\$IF DEBUGGING = TRUE THEN",
+			"		DIM AS STRING e"
+			"		e\\$ = CHR\\$(27)"
+			"		_ECHO e\\$ + \"[1;36m\" + msg$ + e\\$ + \"[0m\"",
+			"	\\$END IF",
+			"	msg\\$ = \"\"",
+			"END SUB",
+			"SUB console.warn(msg\\$)"
+			"	\\$IF DEBUGGING = TRUE THEN",
+			"		DIM AS STRING e"
+			"		e\\$ = CHR\\$(27)"
+			"		_ECHO e\\$ + \"[1;33m\" + msg$ + e\\$ + \"[0m\"",
+			"	\\$END IF",
+			"	msg\\$ = \"\"",
+			"END SUB",
+			"SUB console.error(msg\\$)"
+			"	\\$IF DEBUGGING = TRUE THEN",
+			"		DIM AS STRING e"
+			"		e\\$ = CHR\\$(27)"
+			"		_ECHO e\\$ + \"[1;31m\" + msg$ + e\\$ + \"[0m\"",
+			"	\\$END IF",
+			"	msg\\$ = \"\"",
+			"END SUB",
+		],
+		"description": "Create global QB64PE header"
+	}
 }
