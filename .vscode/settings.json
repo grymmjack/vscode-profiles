@@ -363,36 +363,11 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
     ],
-    "webSearch.searchEngines": {
-        "QB64 Official Wiki": "https://github.com/QB64Official/qb64/search?q=%s&type=wikis",
-        "QB64 PE Wiki": "https://qb64phoenix.com/qb64wiki/index.php/%s"
-    },
-    "webSearch.defaultSearchEngines": [
-    ],
-    "webSearch.useDefaultSearchEnginesList": false,
-    "webSearch.messageLevels": "hideAll",
+
     "autoalign.minSeparationLeft": 1,
     "autoalign.columnWidth": 1,
     "git.openRepositoryInParentFolders": "never",
     "editor.accessibilitySupport": "off",
-    "qb64.formatMode": "No Change",
-    "qb64.isHoverTextFileEnabled": true,
-    "qb64.isCreateBakFileEnabled": false,
-    "qb64.isCreateGitIgnoreEnabled": false,
-    "qb64.isCurrentRowHighlightEnabled": false,
-    "qb64.isTodoHighlightEnabled": false,
-    "qb64.helpPath": "/home/grymmjack/.vscode/extensions/qb64-official.qb64-0.9.1/help",
-    "qb64.compilerPath": "/home/grymmjack/git/QB64pe/qb64pe",
-    "qb64.installPath": "/home/grymmjack/git/QB64pe",
-    "qb64.isRgbColorEnabled": false,
-    "qb64.isFormatMetaComamndsMixedCaseEnabled": false,
-    "qb64.isBoldingSubsAndFunctionsEnabled": false,
-    "qb64.isRunCPCheckesEnabled": false,
-    "qb64.debuggerPort": 7222,
-    "qb64.vsCodePort": 7223,
-    "qb64.filesToSkip": [
-        "*"
-    ],
     "workbench.editorAssociations": {
         "*.md": "vscode.markdown.preview.editor"
     },
@@ -403,11 +378,7 @@
     "debug.allowBreakpointsEverywhere": true,
     "editor.stickyScroll.enabled": true,
     "files.associations": {
-        "*.TXT": "plaintext",
-        "*.BAS": "QB64",
-        "*.BI": "QB64",
-        "*.BM": "QB64",
-        "*.FRM": "QB64"
+        "*.TXT": "plaintext"
     },
     "markdown.preview.fontSize": 18,
     "terminal.integrated.fontSize": 13,
@@ -415,6 +386,5 @@
     "[QB64]": {
         "editor.stickyScroll.enabled": true
     },
-    "workbench.iconTheme": "file-icons",
-    "workbench.colorTheme": "MS-DOS Editor Theme"
+    "workbench.iconTheme": "file-icons"
 }
