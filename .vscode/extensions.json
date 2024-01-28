@@ -1,10 +1,15 @@
 {
     "recommendations": [
-        "ms-vscode.live-server",
         "brandonfowler.exe-runner",
+        "bladnman.auto-align",
+        "file-icons.file-icons",
+        "github.vscode-pull-request-github",
+        "ms-vscode.hexeditor",
         "ionicabizau.ms-dos-editor-theme",
-        "ssnangua.vscode-nwjs-snippets",
-        "ruakr.vsc-nwjs",
-        "qb64-official.qb64"
+        "ziyasal.vscode-open-in-github",
+        "qb64-official.qb64",
+        "benrogerswpg.websearchengine",
+        "drmerfy.overtype",
+        "forbeslindesay.forbeslindesay-taskrunner"
     ]
 }
