@@ -382,7 +382,8 @@
     "qb64.isCurrentRowHighlightEnabled": false,
     "qb64.isTodoHighlightEnabled": false,
     "qb64.helpPath": "/home/grymmjack/.vscode/extensions/qb64-official.qb64-0.9.1/help",
-    "qb64.compilerPath": "/home/grymmjack/git/QB64pe/qb64pe",
+    // "qb64.compilerPath": "/home/grymmjack/git/QB64pe/qb64pe",
+    "qb64.compilerPath": "/home/grymmjack/bin/qb64pe.sh",
     "qb64.installPath": "/home/grymmjack/git/QB64pe",
     "qb64.isRgbColorEnabled": false,
     "qb64.isFormatMetaComamndsMixedCaseEnabled": false,
@@ -407,7 +408,8 @@
         "*.BAS": "QB64",
         "*.BI": "QB64",
         "*.BM": "QB64",
-        "*.FRM": "QB64"
+        "*.FRM": "QB64",
+        "*.UI": "QB64"
     },
     "markdown.preview.fontSize": 18,
     "terminal.integrated.fontSize": 13,
