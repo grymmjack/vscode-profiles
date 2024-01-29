@@ -36,11 +36,11 @@
 			"	\\$LET TRUE = TRUE",
 			"	CONST FALSE = 0 : CONST TRUE = NOT FALSE"
 			"\\$END IF",
-			"$IF WIN THEN",
-			"    CONST SLASH$ = "\"",
-			"$ELSE",
-			"    CONST SLASH$ = "/"",
-			"$END IF",
+			"\\$IF WIN THEN",
+			"    CONST SLASH\\$ = \"\\\"",
+			"\\$ELSE",
+			"    CONST SLASH\\$ = \"/\"",
+			"\\$END IF",
 			"",
 			"",
 			"",
@@ -48,12 +48,22 @@
 			"",
 			"",
 			"",
+			"''",
+			"' Log to console if DEBUGGING",
+			"' @param STRING msg message to send",
+			"'",
 			"SUB console.log(msg$)"
 			"	\\$IF DEBUGGING = TRUE THEN",
 			"		_ECHO msg$",
 			"	\\$END IF",
 			"	msg\\$ = \"\"",
 			"END SUB"
+			"",
+			"",
+			"''",
+			"' Log to console as info if DEBUGGING",
+			"' @param STRING msg message to send",
+			"'",
 			"SUB console.info(msg\\$)"
 			"	\\$IF DEBUGGING = TRUE THEN",
 			"		DIM AS STRING e"
@@ -62,6 +72,12 @@
 			"	\\$END IF",
 			"	msg\\$ = \"\"",
 			"END SUB",
+			"",
+			"",
+			"''",
+			"' Log to console as warning if DEBUGGING",
+			"' @param STRING msg message to send",
+			"'",
 			"SUB console.warn(msg\\$)"
 			"	\\$IF DEBUGGING = TRUE THEN",
 			"		DIM AS STRING e"
@@ -70,6 +86,12 @@
 			"	\\$END IF",
 			"	msg\\$ = \"\"",
 			"END SUB",
+			"",
+			"",
+			"''",
+			"' Log to console as error if DEBUGGING",
+			"' @param STRING msg message to send",
+			"'",
 			"SUB console.error(msg\\$)"
 			"	\\$IF DEBUGGING = TRUE THEN",
 			"		DIM AS STRING e"
