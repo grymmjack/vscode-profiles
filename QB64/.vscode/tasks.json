@@ -51,6 +51,29 @@
             }
         },
         {
+            "label": "HELP: OLD QB64 Wiki",
+            "command": "OpenWebPage",
+            "type": "shell",
+            "linux": {
+                "command": "setsid xdg-open https://qb64forum.alephc.xyz/index.php",
+            },
+            "osx": {
+                "command": "open https://qb64forum.alephc.xyz/index.php",
+            },
+            "windows": {
+                "command": "start https://qb64forum.alephc.xyz/index.php",
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": false,
+                "close": true
+            }
+        },
+        {
             "label": "EXECUTE: Run",
             "dependsOn": "BUILD: Compile",
             "type": "shell",
@@ -86,7 +109,7 @@
                 ]
             },
             "osx": {
-                "command": "/home/grymmjack/git/InForm-PE/UiEditor",
+                "command": "~/git/InForm-PE/UiEditor",
                 "args": [
                     "${file}"
                 ]
@@ -275,6 +298,7 @@
                 "command": "setsid --fork /home/grymmjack/.local/share/Steam/steamapps/common/Aseprite/aseprite \"${file}\""
             },
             "presentation": {
+                "close": true,
                 "echo": false,
                 "reveal": "never",
                 "focus": false,
@@ -291,7 +315,7 @@
             "label": "TEXTMODE: Open in MoebiusXBIN",
             "type": "shell",
             "windows": {
-                "command": "C:\\Program Files\\MoebiusXBIN\\moebius.exe",
+                "command": "B:\\Backup2020\\Drawing\\ANSI\\Programs\\Moebius x-bin GJ Edition\\MoebiusXBIN.exe",
                 "args": [
                     "--no-sandbox",
                     "${file}"
@@ -308,6 +332,7 @@
                 "command": "setsid --fork /opt/MoebiusXBIN/moebius --no-sandbox \"${file}\""
             },
             "presentation": {
+                "close": true,
                 "echo": false,
                 "reveal": "never",
                 "focus": false,
@@ -324,7 +349,7 @@
             "label": "TEXTMODE: Open in IcyDraw",
             "type": "shell",
             "windows": {
-                "command": "C:\\Program Files\\IcyDraw\\IcyDraw.exe",
+                "command": "B:\\Backup2020\\Drawing\\ANSI\\Programs\\Icy Draw\\icy_draw.exe",
                 "args": [
                     "${file}"
                 ]
@@ -339,6 +364,7 @@
                 "command": "setsid --fork /usr/bin/icy_draw \"${file}\""
             },
             "presentation": {
+                "close": true,
                 "echo": false,
                 "reveal": "never",
                 "focus": false,
@@ -355,7 +381,7 @@
             "label": "TEXTMODE: Open in PabloDraw",
             "type": "shell",
             "windows": {
-                "command": "C:\\Program Files\\PabloDraw\\PabloDraw.exe",
+                "command": "C:\\Program Files (x86)\\PabloDraw\\PabloDraw.exe",
                 "args": [
                     "--edit",
                     "${file}"
@@ -372,6 +398,7 @@
                 "command": "setsid --fork /home/grymmjack/git/pablodraw/artifacts/bin/PabloDraw/Debug/net7.0/linux-x64/PabloDraw --edit \"${file}\""
             },
             "presentation": {
+                "close": true,
                 "echo": false,
                 "reveal": "never",
                 "focus": false,
@@ -388,7 +415,7 @@
             "label": "TEXTMODE: View in PabloDraw",
             "type": "shell",
             "windows": {
-                "command": "C:\\Program Files\\PabloDraw\\PabloDraw.exe",
+                "command": "C:\\Program Files (x86)\\PabloDraw\\PabloDraw.exe",
                 "args": [
                     "--file",
                     "${file}"
@@ -405,6 +432,7 @@
                 "command": "setsid --fork /home/grymmjack/git/pablodraw/artifacts/bin/PabloDraw/Debug/net7.0/linux-x64/PabloDraw --file \"${file}\""
             },
             "presentation": {
+                "close": true,
                 "echo": false,
                 "reveal": "never",
                 "focus": false,
