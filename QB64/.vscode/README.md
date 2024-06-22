@@ -4,5 +4,5 @@
 
 ## How to Use?
 
-1. Copy the .vscode directory into the root of your QB64 project and open the folder in vscode. 
+1. Copy the .vscode directory into the root of your QB64 PE project and open the folder in vscode. 
 2. Done.
