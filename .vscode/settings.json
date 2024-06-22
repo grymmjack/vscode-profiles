@@ -1,20 +1,32 @@
 {
     "zenMode.centerLayout": true,
+    "zenMode.hideActivityBar": true,
+    "zenMode.hideLineNumbers": true,
+    "zenMode.hideStatusBar": true,
+    "zenMode.restore": true,
+    "zenMode.fullScreen": true,
+    "editor.stickyScroll.defaultModel": "indentationModel",
+    // "notebook.stickyScroll.mode": "indented",
+    "zenMode.showTabs": "none",
     "extensions.ignoreRecommendations": false,
-    "editor.fontSize": 13,
-    "debug.console.fontSize": 13,
-    "chat.editor.fontSize": 13,
-    "screencastMode.fontSize": 48,    
-    "editor.fontFamily": "monospace",
-    "terminal.integrated.fontFamily": "monospace",
-    "editor.fontWeight": "bold",
-    "editor.lineHeight": 0,
+    "chat.editor.fontSize": 16,
+    "editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "screencastMode.fontSize": 48,
+    "editor.fontFamily": "BerkeleyMono Nerd Font, SauceCodePro Nerd Font, Unifont, CaskaydiaCove Nerd Font, MorePerfectDOSVGA Nerd Font, FiraCode Nerd Font Mono, Noto Mono, monospace",
+    // "editor.fontFamily": "Berkeley Mono, Flexi IBM VGA True, PxPlus VGA SquarePx, SauceCodePro Nerd Font, Unifont, CaskaydiaCove Nerd Font, MorePerfectDOSVGA Nerd Font, FiraCode Nerd Font Mono, Noto Mono, monospace",
+    // "editor.fontFamily": "Noto Mono, monospace",
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font, BerkeleyMono Nerd Font, BigBlueTerm437 Nerd Font, MorePerfectDOSVGA Nerd Font, FiraCode Nerd Font Mono, Noto Mono, monospace",
+    // "editor.lineHeight": 1.2,
+    // "editor.lineHeight": 1.0,
     "terminal.integrated.lineHeight": 1.0,
     "terminal.integrated.fontWeightBold": "normal",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "workbench.tree.indent": 16,
     "editor.suggest.preview": true,
+    "workbench.tree.enableStickyScroll": true,
+    "window.zoomPerWindow": true,
     "workbench.colorCustomizations": {
         "editorGutter.background": "#00000060",
         "editorGutter.addedBackground": "#00aa00",
@@ -60,7 +72,7 @@
         "list.inactiveSelectionForeground": "#ffffff",
         "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000",
         "editor.findMatchBackground": "#000000",
-        "editor.findMatchHighlightBackground": "#000000",
+        "editor.findMatchHighlightBackground": "#000000a0",
         "editor.findMatchBorder": "#ffff55",
         "tab.activeBackground": "#00a3a3",
         "tab.activeForeground": "#ffffff",
@@ -97,8 +109,8 @@
         "terminalCommandDecoration.defaultBackground": "#00a3a3",
         "terminalCommandDecoration.errorBackground": "#aa0000",
         "terminalCommandDecoration.successBackground": "#00aa00",
-        "terminal.findMatchBackground": "#ffff55",
-        "terminal.findMatchHighlightBackground": "#ffff55",
+        "terminal.findMatchBackground": "#ffff55a0",
+        "terminal.findMatchHighlightBackground": "#ffff55a0",
         "terminalCursor.background": "#ffffff",
         "terminalCursor.foreground": "#ffffff",
         "editorBracketPairGuide.background1": "#ffffff60",
@@ -134,12 +146,12 @@
         "breadcrumbPicker.background": "#222222",
         "breadcrumb.activeSelectionForeground": "#ffffff",
         "minimapSlider.background": "#ffffff20",
-        "minimap.selectionHighlight": "#ffff00",
+        "minimap.selectionHighlight": "#ffff00a0",
         "minimapSlider.hoverBackground": "#ffffff40",
         "minimapSlider.activeBackground": "#ffffff40",
         "minimap.background": "#00000020",
         "minimap.errorHighlight": "#ff0000",
-        "minimap.findMatchHighlight": "#000000",
+        "minimap.findMatchHighlight": "#000000a0",
         "minimap.warningHighlight": "#ff00ff",
         "scrollbarSlider.background": "#ffffff20",
         "scrollbarSlider.hoverBackground": "#ffffff40",
@@ -149,7 +161,6 @@
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.enableBell": true,
     "terminal.integrated.enableFileLinks": "on",
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.shellIntegration.enabled": true,
@@ -186,7 +197,7 @@
             "textMateRules": [
                 {
                     "scope": [
-                        "graphics.QB64"
+                        "graphics.QB64PE"
                     ],
                     "settings": {
                         "foreground": "#C26FDB"
@@ -194,7 +205,7 @@
                 },
                 {
                     "scope": [
-                        "sound.QB64"
+                        "sound.QB64PE"
                     ],
                     "settings": {
                         "foreground": "#FFBB00"
@@ -202,7 +213,7 @@
                 },
                 {
                     "scope": [
-                        "keyword.control.QB64"
+                        "keyword.control.QB64PE"
                     ],
                     "settings": {
                         "foreground": "#95EBF1"
@@ -210,7 +221,7 @@
                 },
                 {
                     "scope": [
-                        "debug.QB64"
+                        "debug.QB64PE"
                     ],
                     "settings": {
                         "foreground": "#FF85A7"
@@ -223,7 +234,7 @@
                     }
                 },
                 {
-                    "scope": "userfunctions.QB64",
+                    "scope": "userfunctions.QB64PE",
                     "settings": {
                         "foreground": "#52DD7C"
                     }
@@ -301,7 +312,7 @@
                     }
                 },
                 {
-                    "scope": "variable.other.QB64",
+                    "scope": "variable.other.QB64PE",
                     "settings": {
                         "foreground": "#52DD7C",
                         "fontStyle": ""
@@ -337,7 +348,117 @@
                     }
                 }
             ]
-        }
+        
+        },
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "comment.block",
+                    "comment.block.documentation",
+                    "comment.line",
+                    "constant",
+                    "constant.character",
+                    "constant.character.escape",
+                    "constant.numeric",
+                    "constant.numeric.integer",
+                    "constant.numeric.float",
+                    "constant.numeric.hex",
+                    "constant.numeric.octal",
+                    "constant.other",
+                    "constant.regexp",
+                    "constant.rgb-value",
+                    "emphasis",
+                    "entity",
+                    "entity.name",
+                    "entity.name.class",
+                    "entity.name.function",
+                    "entity.name.method",
+                    "entity.name.section",
+                    "entity.name.selector",
+                    "entity.name.tag",
+                    "entity.name.type",
+                    "entity.other",
+                    "entity.other.attribute-name",
+                    "entity.other.inherited-class",
+                    "invalid",
+                    "invalid.deprecated",
+                    "invalid.illegal",
+                    "keyword",
+                    "keyword.control",
+                    "keyword.operator",
+                    "keyword.operator.new",
+                    "keyword.operator.assignment",
+                    "keyword.operator.arithmetic",
+                    "keyword.operator.logical",
+                    "keyword.other",
+                    "markup",
+                    "markup.bold",
+                    "markup.changed",
+                    "markup.deleted",
+                    "markup.heading",
+                    "markup.inline.raw",
+                    "markup.inserted",
+                    "markup.italic",
+                    "markup.list",
+                    "markup.list.numbered",
+                    "markup.list.unnumbered",
+                    "markup.other",
+                    "markup.quote",
+                    "markup.raw",
+                    "markup.underline",
+                    "markup.underline.link",
+                    "meta",
+                    "meta.block",
+                    "meta.cast",
+                    "meta.class",
+                    "meta.function",
+                    "meta.function-call",
+                    "meta.preprocessor",
+                    "meta.return-type",
+                    "meta.selector",
+                    "meta.tag",
+                    "meta.type.annotation",
+                    "meta.type",
+                    "punctuation.definition.string.begin",
+                    "punctuation.definition.string.end",
+                    "punctuation.separator",
+                    "punctuation.separator.continuation",
+                    "punctuation.terminator",
+                    "storage",
+                    "storage.modifier",
+                    "storage.type",
+                    "string",
+                    "string.interpolated",
+                    "string.other",
+                    "string.quoted",
+                    "string.quoted.double",
+                    "string.quoted.other",
+                    "string.quoted.single",
+                    "string.quoted.triple",
+                    "string.regexp",
+                    "string.unquoted",
+                    "strong",
+                    "support",
+                    "support.class",
+                    "support.constant",
+                    "support.function",
+                    "support.other",
+                    "support.type",
+                    "support.type.property-name",
+                    "support.variable",
+                    "variable",
+                    "variable.language",
+                    "variable.name",
+                    "variable.other",
+                    "variable.other.readwrite",
+                    "variable.parameter"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
     },
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairsHorizontal": true,
@@ -363,28 +484,82 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"
     ],
-
+    "webSearch.searchEngines": {
+        "QB64 Official Wiki": "https://github.com/QB64Official/qb64/search?q=%s&type=wikis",
+        "QB64 PE Wiki": "https://qb64phoenix.com/qb64wiki/index.php/%s"
+    },
+    "webSearch.defaultSearchEngines": [],
+    "webSearch.useDefaultSearchEnginesList": false,
+    "webSearch.messageLevels": "hideAll",
     "autoalign.minSeparationLeft": 1,
     "autoalign.columnWidth": 1,
     "git.openRepositoryInParentFolders": "never",
     "editor.accessibilitySupport": "off",
+    "qb64pe.formatMode": "No Change",
+    "qb64pe.isHoverTextFileEnabled": true,
+    "qb64pe.isClickKeywordHelpFileEnabled": false,
+    "qb64pe.isCreateBakFileEnabled": false,
+    "qb64pe.isCreateGitIgnoreEnabled": false,
+    "qb64pe.isCurrentRowHighlightEnabled": false,
+    "qb64pe.isTodoHighlightEnabled": false,
+    "qb64pe.isRgbColorEnabled": false,
+    "qb64pe.isFormatMetaComamndsMixedCaseEnabled": false,
+    "qb64pe.isBoldingSubsAndFunctionsEnabled": false,
+    "qb64pe.isRunCPCheckesEnabled": false,
+    "qb64pe.debuggerPort": 7222,
+    "qb64pe.vsCodePort": 7223,
+    "qb64pe.filesToSkip": [
+        "*"
+    ],
     "workbench.editorAssociations": {
         "*.md": "vscode.markdown.preview.editor"
     },
-    "workbench.list.multiSelectModifier": "ctrlCmd",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.editor.enablePreview": true,
+    "workbench.list.multiSelectModifier": "alt",
+    "editor.hover.sticky": true,
     "editor.renderWhitespace": "none",
     "debug.allowBreakpointsEverywhere": true,
     "editor.stickyScroll.enabled": true,
-    "files.associations": {
-        "*.TXT": "plaintext"
-    },
+    // "files.associations": {
+    //     "*.TXT": "plaintext",
+    //     "*.BAS": "vb",
+    //     "*.BI": "vb",
+    //     "*.BM": "vb",
+    //     "*.FRM": "vb",
+    //     "*.UI": "vb"
+    // },
     "markdown.preview.fontSize": 18,
-    "terminal.integrated.fontSize": 13,
     "forbeslindesay-taskrunner.auto-expand-limit": 20,
     "[QB64]": {
         "editor.stickyScroll.enabled": true
     },
-    "workbench.iconTheme": "file-icons"
+    "workbench.colorTheme": "MS-DOS Editor Theme",
+    "workbench.iconTheme": "file-icons",
+    "githubPullRequests.focusedMode": "multiDiff",
+    "notebook.experimental.variablesView": true,
+    "terminal.integrated.mouseWheelZoom": true,
+    "git.ignoreRebaseWarning": true,
+    "diffEditor.diffAlgorithm": "advanced",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.tabs.enabled": false,
+    "hediet.vscode-drawio.resizeImages": null,
+    "hediet.vscode-drawio.zoomFactor": 1.05,
+    "hediet.vscode-drawio.knownPlugins": [
+        {
+            "allowed": true,
+            "pluginId": "number"
+        }
+    ],
+    "hediet.vscode-drawio.codeLinkActivated": true,
+    "redhat.telemetry.enabled": false,
+    "svg.preview.mode": "svg",
+    "hediet.vscode-drawio.theme": "atlas",
+    "hediet.vscode-drawio.simpleLabels": true,
+    "accessibility.signals.terminalBell": {
+        "sound": "on"
+    },
+    "terminal.integrated.enableVisualBell": true,
+    "qb64pe.installPath": "c:\\Users\\grymm\\git\\QB64pe",
+    "qb64pe.compilerPath": "c:\\Users\\grymm\\git\\QB64pe\\qb64pe.exe",
+    "terminal.integrated.fontSize": 15,
+    "qb64pe.helpPath": "c:\\Users\\grymm\\git\\qb64pe-vscode\\help"
 }

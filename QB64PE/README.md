@@ -16,7 +16,7 @@ See YouTube video demonstrating this profile here:
 
 ## Profile Installation
 1. Download the zip file, unzip it to a temporary directory.
-2. If you like, install the TTF font (the settings use it but you can customize this or remove it)
+2. If you like, install the TTF fonts (the settings use it but you can customize this or remove it)
 3. Open VSCode January 2023 or greater
 4. From Cog menu in bottom left corner choose Profiles -> Import Profile...
 5. Locate the `QB64PE.code-profile` file and click OK to import it
