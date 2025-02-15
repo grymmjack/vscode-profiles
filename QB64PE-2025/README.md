@@ -66,7 +66,7 @@ By default, vscode cannot do what the QB64PE IDE does, including:
 - Showing errors in real time
 - Debugging in real time (stepping through code)
 
-However, you can modify the way vscode works to customize and integrate it to fill these gaps.
+However, you can modify the way vscode works to customize and integrate it to fill SOME of these gaps.
 
 ## A note about levels of configurations and their purposes
 > vscode is an extremely flexible program that has several levels of settings and configurations. 
