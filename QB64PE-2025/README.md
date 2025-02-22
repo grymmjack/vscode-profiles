@@ -32,7 +32,18 @@ After following along you will know enough about vscode configuration and the QB
 - Open vscode and get through the initial onboarding/welcome
 - You can skip ahead by clicking the `✔️✔️ Mark done` link in bottom left
 
-## Install the extension
+## Install the extension (choose one option)
+### Option 1: From Extensions Panel
+![image](https://github.com/user-attachments/assets/7231d9eb-d0f5-4324-b26a-18681ef4e238)
+1. Click Extensions icon in the sidebar
+2. Click `...` menu in the Extensions pane to open the menu
+3. Click `Install from VSIX...` in the menu
+
+![image](https://github.com/user-attachments/assets/c7bb9b53-8062-4100-82a5-4e6b2d9d4c27)
+1. Locate the download of the extension file (see: [QB64PE extension](https://github.com/grymmjack/qb64pe-vscode))
+2. Click `Install`
+
+### Option 2: From Location on Disk via Command Palette
 - Press `CTRL-SHIFT-P` and type: `devel ext loc` which will highlight `Developer: Install extension from location`
 - With `Developer: Install extension from location` highlighted, press `ENTER`
 - Navigate to the directory/folder where you downloaded the QB64PE vscode extension
@@ -54,8 +65,9 @@ After following along you will know enough about vscode configuration and the QB
 4. For **Qb64pe: Help Path: Full path to the help directory(folder)** (`${config:qb64pe.helpPath}`)  
    Type the path to your QB64PE directory plus add `/internal/help`  
    e.g. `/home/grymmjack/git/QB64pe/internal/help`  
+   NOTE: It is by default pointing to the extension directory, add /help to the end and you will not need to do anything else.
 
-5. For **Qb64pe: Install Path: Full path to the QB64PE directory(folder)** (`${config:qb64pe.path}`)  
+6. For **Qb64pe: Install Path: Full path to the QB64PE directory(folder)** (`${config:qb64pe.path}`)  
    Type the path to your QB64PE directory  
    e.g. `/home/grymmjack/git/QB64pe`
 
