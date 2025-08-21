@@ -1,0 +1,14 @@
+{
+  "servers": [
+    {
+      "name": "github",
+      "url": "http://localhost:3000/github-mcp",
+      "description": "Access GitHub repos, issues, and PRs via MCP"
+    },
+    {
+      "name": "jira",
+      "url": "http://localhost:4000/jira-mcp",
+      "description": "Query Jira tickets via MCP"
+    }
+  ]
+}

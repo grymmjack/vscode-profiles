@@ -1,0 +1,24 @@
+{
+  "name": "devops-tools",
+  "description": "Basic DevOps tool commands accessible to Copilot",
+  "tools": [
+    {
+      "name": "kubectl",
+      "type": "command",
+      "command": "kubectl {{args}}"
+    },
+    {
+      "name": "terraform-validate",
+      "type": "command",
+      "command": "terraform validate"
+    },
+    {
+      "name": "gh-issue-list",
+      "type": "command",
+      "command": "gh issue list --limit {{limit}}",
+      "defaults": {
+        "limit": 20
+      }
+    }
+  ]
+}

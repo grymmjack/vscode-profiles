@@ -1,0 +1,11 @@
+{
+  "name": "style-guide",
+  "description": "Project coding style guidance",
+  "instructions": [
+    "Prefer TypeScript over JavaScript.",
+    "Use functional React components with hooks.",
+    "Write JSDoc/TSDoc for exported functions and components.",
+    "Return errors as Result types where practical.",
+    "Use Prettier defaults and ESLint recommended rules."
+  ]
+}
