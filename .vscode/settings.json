@@ -561,5 +561,17 @@
     "qb64pe.installPath": "c:\\Users\\grymm\\git\\QB64pe",
     "qb64pe.compilerPath": "c:\\Users\\grymm\\git\\QB64pe\\qb64pe.exe",
     "terminal.integrated.fontSize": 15,
-    "qb64pe.helpPath": "c:\\Users\\grymm\\git\\qb64pe-vscode\\help"
+    "qb64pe.helpPath": "c:\\Users\\grymm\\git\\qb64pe-vscode\\help",
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.terminal.resizePaneUp",
+        "workbench.action.terminal.resizePaneDown",
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.terminal.resizePaneUp",
+        "-workbench.action.terminal.resizePaneUp",
+        "workbench.action.toggleAuxiliaryBar",
+        "workbench.action.togglePanel",
+        "-workbench.action.togglePanel",
+        "workbench.action.toggleSidebarVisibility",
+        "-workbench.action.toggleSidebarVisibility"
+    ]    
 }
